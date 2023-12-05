@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>레드향 주문하기(required)</title>
+    <link rel="stylesheet" href="../doit_HTML-CSS-JavaScript/05/css/form2.css">
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <fieldset>
+        <legend><b>배송정보</b></legend>
+        <ul id="shipping">
+            <li>
+                <label for="prod">주문상품</label>
+                <input type="text" id="prod" value="상품용 3kg"  readonly>
+            </li>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" required autofocus>
+            </li>
+            <li>
+                <label for="addr">주소</label>
+                <input type="text" for="addr" required>
+            </li>
+            <li>
+                <label for="e-mail">이메일</label>
+                <input type="email" id="e-mail">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone" required>
+            </li>
+            <li>
+                <label for="delivery-date">배송 지정</label>
+                <input type="date" id="delivery-date"><small>(주문일로부터 최소 3일 이후)</small>
+            </li>
+            <li>
+                <label for="memo">메모</label>
+                <textarea id="memo" cols="40" rows="4"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+    <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+    </div>
+</body>
+</html>
