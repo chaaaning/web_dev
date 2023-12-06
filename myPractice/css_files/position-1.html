@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position 속성</title>
+    <style>
+        p {
+            width: 500px;
+            height: 200px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+        #static {
+            /* static : 일렬로 하나 씩 */
+            position: static;
+        }
+        #relative-1{
+            /* relative : 일렬로 하나씩 이지만, 위치를 조정 가능 */
+            /* 기준이 되는 위치가 와야할 위치 */
+            position: relative;
+        }
+        #relative-2{
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        #fixed{
+            /* 사이트 막대가 달라져도 고정 됨 */
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            position: fixed;
+            right: 30px;
+            top: 30px;
+        }
+        /* absolute - 소스 위치와 상관없이 위칫값 지정 */
+        /* position-relative 가 기준 점이 됨 */
+    </style>
+</head>
+<body>
+    <p id="static">
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라 만세 무궁화 삼천리 화려 강산
+        대한사람 대한으로 길이 보전하세
+    </p>
+    <p id="relative-1">
+        남산 위에 저 소나무 철갑을 두른 듯 바람서리 불변함은 일편단심일세 무궁화 삼천리 화려 강산
+        대한사람 대한으로 길이 보전하세
+    </p>
+    <p id="relative-2">
+        백두산 정기 뻗은 삼천리 강산 무궁화 대한의 온누리의 빛
+        화랑의 핏줄타고 자라난 우리 그 이름 용감하다 대한 육군
+        앞으로 앞으로 용진 또 용진 우리는 영원한 조국의 방패
+        앞으로 앞으로 용진 또 용진 우리는 영원한 조국의 방패
+    </p>
+    <p id="fixed"></p>
+</body>
+</html>
